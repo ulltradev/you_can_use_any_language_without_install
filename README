@@ -1,0 +1,33 @@
+The airFlow project
+
+
+--Lo que busco aqui es poder crear mis experimentos de airflow lo antes posible para lo cual pienso utilizar docker para simular un multi server enviroment,,,,,,,,,,,,,,, hay que seguir luchando hasta el final, lo hago por Neicy
+
+
+--primer intento de trabajar dentro del contenedor de docker-------> https://www.youtube.com/watch?v=mi8kpAgHYFo
+
+
+--parece que hay un problema de version que solucionare facilmente lanzando estos comandos
+
+sudo apt-get update
+sudo apt-get install code 
+
+--Para probar el poderoso concepto de usar programas que no instale en mi computador voy a intentar usar node que no tengo en esta maquina corremos el comando 
+
+node -v
+
+
+--multiservidor https://www.youtube.com/watch?v=FiaLKwdv9TI
+
+########################################################################################################################
+########################################################################################################################
+########################################################################################################################
+
+En este proyecto quiero ver la magia de ejcutar node sin tener node instalado node en el pc
+
+sudo docker build -t low-json .
+
+
+docker run -p 5000:4000 -d low-json
+
+http://localhost:5000/notes
